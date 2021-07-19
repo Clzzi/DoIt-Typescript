@@ -85,9 +85,9 @@ export function writeFile(filepath: string, content: any) { }
 
 TS는 물론 Python이나 PHP같은 몇몇 프로그래밍 언어는 **yield**라는 특별한 키워드를 제공합니다.
 
-이 키워드는 '반복자'를 의미하는 **반복기(iterator)**를 생성할 때 사용합니다. 그런데 이 반복기는 반복기 **제공자(iterable)**를 통해 얻을 수 있습니다. 이 처럼 yield문을 이용해 반복기를 만들어 내는 반복기 제공자를 **생성기(generator)**라고 부릅니다.
+이 키워드는 '반복자'를 의미하는 **반복기(iterator)** 를 생성할 때 사용합니다. 그런데 이 반복기는 반복기 **제공자(iterable)** 를 통해 얻을 수 있습니다. 이 처럼 yield문을 이용해 반복기를 만들어 내는 반복기 제공자를 **생성기(generator)** 라고 부릅니다.
 
-생성기는 function 키워드에 **별표(*)**를 결합한 **function***과 yield 키워드를 이용해 만듭니다.
+생성기는 function 키워드에 **별표(*)** 를 결합한 **function*** 과 yield 키워드를 이용해 만듭니다.
 
 TS에서 yield는 반드시 function*으로 만들어진 함수 내부에서만 사용할 수 있습니다.
 
@@ -160,7 +160,7 @@ let stringContainer: Container<string> = new Container<string>("Hi");
 
 ### TS - 대수 타입
 
-ADT란, **추상 데이터 타입(abstract data type)**을 의미하기도 하지만 **대수 타입(algebraic data type)**을 의미하기도 합니다. 대수 타입이란, 다른 자료형의 값을 가지는 자료형을 의미합니다. 크게 **합집합 타입**과 **교집합 타입** 두 가지가 있습니다. 합집합 타입은 **" | "** 기호를, 교집합 타입은 **' & '** 기호를 사용합니다. 한마디로 컴일 때 배운 || 냐 && 이냐의 차이 인거같다.
+ADT란, **추상 데이터 타입(abstract data type)** 을 의미하기도 하지만 **대수 타입(algebraic data type)** 을 의미하기도 합니다. 대수 타입이란, 다른 자료형의 값을 가지는 자료형을 의미합니다. 크게 **합집합 타입**과 **교집합 타입** 두 가지가 있습니다. 합집합 타입은 **" | "** 기호를, 교집합 타입은 **' & '** 기호를 사용합니다. 한마디로 컴일 때 배운 || 냐 && 이냐의 차이 인거같다.
 
 ```tsx
 type NumberOrString = number | string // 합집합 타입 예
